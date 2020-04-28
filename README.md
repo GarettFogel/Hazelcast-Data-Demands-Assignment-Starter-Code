@@ -9,8 +9,8 @@ To test, make sure a hazelcast server is running on your machine, then run in se
 Your solutions won’t require very much code. Hazelcast is meant to be simple to use across multiple clients. Attach a screenshot after each step of the following.
 
 1. First, you want to be able to add players to a list called ‘available-players’, and view the list on your website.
- a. Complete the function ‘addPlayer’ in server.py to add the player’s name to the list. Should give a success message if successful.
- b. Complete the function ‘getPlayers’ in app.py. It should print out all players in the ‘available-players’ list.
+ 1. Complete the function ‘addPlayer’ in server.py to add the player’s name to the list. Should give a success message if successful.
+ 2. Complete the function ‘getPlayers’ in app.py. It should print out all players in the ‘available-players’ list.
 
 2. Now, you want to be able to create a new active game from your management app. There must be 3 players available to start a new game. When the game starts, the game should be added to the map ‘active-games’ with a key that is an ID, and a value that is the game mode. 3 random players should be removed from the ‘available-players’ list.
  a. Complete the function “startNewGame” in app.py that adds the id and game mode to the ‘active-games’ map and removes 3 players from the ‘available-players’ list. There must be 3 available players to start a new game. If there are less than 3 players, print that out and don’t start the new game. Should print out the new key and value with a success message if successful.
